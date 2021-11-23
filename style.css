@@ -1,0 +1,82 @@
+html {
+    font-size: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+
+/* COLORS */
+:root {
+    --text-color-01: #1EA87B;
+    --text-color-02: #4571F5;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 406px;
+    background-image: url(assets/images/pizza-time.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+h1 {
+    margin-right: 15%;
+    margin-top: 10%;
+    font-size: 9vw;
+    font-family: 'Comforter Brush', cursive;
+    color: var(--text-color-02);
+    transform: rotate(-20deg);
+    text-shadow: 0 0 15px var(--text-color-01);
+}
+@media (min-width: 801px){
+    h1 {
+        font-size: 71.91px;
+    }
+}
+
+/* MAIN */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: flex-start;
+}
+
+#feedbackForm {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+#feedbackForm img {
+    width: 64px;
+}
+
+#feedbackForm input {
+    width: 324px;
+}
+
+#pizzaRating {
+    display: flex;
+    flex-direction: row;
+}
