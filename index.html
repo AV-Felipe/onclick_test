@@ -24,18 +24,23 @@
             <h2>Deixe sua opinião</h2>
 
             <form id="feedbackForm">
-                <input id="messageField"
-                    type="text"
-                    placeholder="deixe sua opinião"
-                />
+        
                 <input id="nameField"
                     type="text"
                     placeholder="seu nome"
                 />
+
                 <input id="mailField"
                     type="email"
                     placeholder="seu e-mail"
                 />
+
+                <textarea id="messageField"
+                    rows="4"
+                    cols="25"
+                    placeholder="deixe um comentário"
+                ></textarea>
+
                 <fieldset>
                     <legend>Sua nota</legend>
                     <ul id="pizzaRating">
@@ -57,7 +62,25 @@
                     </ul>
 
                 </fieldset>
+                <button id="sendButton" type="button">Enviar</button>
             </form>
+
+            <h2>O que dizem os clientes</h2>
+            
+            <ul id="reviewList">
+                <li class="clientReview">
+                    <p class="reviewerName">João Gilberto</p>
+                    <p class="reviewerMail">joao@legal.com.br</p>
+                    <p class="reviewerText">
+                        Ambiente supimpa e excelente atendimento.
+                    </p>
+                    <p class="reviewerScore">
+                        <img src="assets/images/pizza-pie-yes.png" alt="nota" />
+                        5
+                    </p>
+                </li>
+            </ul>
+
         </main>
 
     </body>

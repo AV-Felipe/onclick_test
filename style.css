@@ -22,13 +22,14 @@ body {
 :root {
     --text-color-01: #1EA87B;
     --text-color-02: #4571F5;
+    --subtext-color-01: #F57A5C;
 }
 
 /* HEADER */
 
 header {
     width: 100%;
-    height: 406px;
+
     background-image: url(assets/images/pizza-time.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -40,6 +41,7 @@ header {
 h1 {
     margin-right: 15%;
     margin-top: 10%;
+    margin-bottom: 30%;
     font-size: 9vw;
     font-family: 'Comforter Brush', cursive;
     color: var(--text-color-02);
@@ -61,6 +63,11 @@ main {
     justify-items: flex-start;
 }
 
+h2 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
 #feedbackForm {
     display: flex;
     align-items: flex-start;
@@ -74,9 +81,65 @@ main {
 
 #feedbackForm input {
     width: 324px;
+    font-size: 1.125rem;
+    padding: 2px;
+}
+
+#messageField {
+    width: 324px;
+    font-size: 1.125rem;
 }
 
 #pizzaRating {
     display: flex;
     flex-direction: row;
+}
+
+#sendButton {
+    width: 324px;
+    font-size: 1.125rem;
+    padding: 2px;
+    margin-bottom: 30px;
+}
+
+/* REVIEW LIST */
+
+.clientReview {
+    border: 1px solid var(--text-color-02);
+    border-radius: 8px;
+    padding: 8px;
+    width: 600px;
+    margin: 15px;
+}
+@media (max-width: 630px){
+    .clientReview {
+        width: calc(100vw - 30px);
+    }
+}
+
+.reviewerName {
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
+.reviewerMail {
+    font-size: .7rem;
+    color: var(--subtext-color-01);
+    margin-bottom: 10px;
+}
+
+.reviewerText {
+    margin-bottom: 10px;
+}
+
+.reviewerScore {
+    text-align: right;
+    font-weight: bold;
+    color: var(--text-color-02);
+    margin-right: 15px;
+}
+
+.reviewerScore img {
+    width: 25px;
+    vertical-align: text-bottom;
 }
